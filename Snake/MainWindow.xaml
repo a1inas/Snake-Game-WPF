@@ -1,0 +1,108 @@
+﻿<Window x:Class="Snake.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Snake"
+        mc:Ignorable="d"
+        Title="Змейка" 
+        Height="700" Width="1200"
+        ResizeMode="NoResize"
+        Foreground="{StaticResource TextColor}"
+        FontFamily="{StaticResource MainFont}"
+        WindowStartupLocation="CenterScreen"
+        Icon="Assets\iconsnake.ico"
+        PreviewKeyDown="Windows_PreviewKeyDown"
+        KeyDown="Windows_KeyDown">
+
+    <Grid>
+        <Image Source="Assets/background.png" Stretch="UniformToFill" Panel.ZIndex="0"
+               HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+
+        <Viewbox>
+            <Grid Panel.ZIndex="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button Width="103"
+                    Margin="-191,7,0,16"
+                    Background="Transparent"
+                    BorderThickness="0"
+                    Click="Back"
+                    HorizontalAlignment="Left">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="Transparent" />
+                            <Setter Property="Content">
+                                <Setter.Value>
+                                    <Image Source="/Assets/Back.png" Width="102" Height="37" />
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="5">
+                                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center" />
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Content">
+                                        <Setter.Value>
+                                            <Image Source="/Assets/Back_click.PNG" Width="102" Height="37" />
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <TextBlock x:Name="ScoreText"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Text="СЧЕТ 1: 0"
+                           FontSize="22"
+                           Margin="10"/>
+
+                <Border x:Name="GridBorder"
+                        Grid.Row="1"
+                        BorderBrush="{StaticResource GridLineColor}"
+                        BorderThickness="1.5"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        RenderOptions.EdgeMode="Aliased"
+                        Margin="20,0,20,20">
+                    <UniformGrid x:Name="GameGrid"
+                                 Width="400"
+                                 Height="400"
+                                 Background="{StaticResource GridBackgroundColor}"
+                                 SnapsToDevicePixels="True"
+                                 RenderOptions.BitmapScalingMode="HighQuality">
+                    </UniformGrid>
+                </Border>
+
+                <Border x:Name="Overlay"
+                        Grid.Row="1"
+                        Background="{StaticResource OverlayColor}"
+                        Width="{Binding Path=ActualWidth, ElementName=GridBorder}"
+                        Height="{Binding Path=ActualHeight, ElementName=GridBorder}"
+                        Margin="{Binding Path=Margin, ElementName=GridBorder}"
+                        RenderOptions.EdgeMode="Aliased">
+                    <TextBlock x:Name="OverlayText"
+                               Text="Нажмите любую клавишу, чтобы начать"
+                               FontSize="19"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               TextWrapping="Wrap"/>
+                </Border>
+            </Grid>
+        </Viewbox>
+    </Grid>
+</Window>

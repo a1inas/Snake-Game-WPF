@@ -1,0 +1,130 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\2players.png" />
+    <None Remove="Assets\2players_click.png" />
+    <None Remove="Assets\2players_klick.png" />
+    <None Remove="Assets\2players_сlick.png" />
+    <None Remove="Assets\arrows.png" />
+    <None Remove="Assets\Back.PNG" />
+    <None Remove="Assets\background sound.wav" />
+    <None Remove="Assets\background.PNG" />
+    <None Remove="Assets\Back_click.PNG" />
+    <None Remove="Assets\Body.png" />
+    <None Remove="Assets\Body2.PNG" />
+    <None Remove="Assets\Bodyf.png" />
+    <None Remove="Assets\DeadBody.png" />
+    <None Remove="Assets\DeadBody2.PNG" />
+    <None Remove="Assets\DeadHead.png" />
+    <None Remove="Assets\DeadHead2.PNG" />
+    <None Remove="Assets\DroidSansMono.ttf" />
+    <None Remove="Assets\Empty.png" />
+    <None Remove="Assets\exit.png" />
+    <None Remove="Assets\exit_click.png" />
+    <None Remove="Assets\exit_hover.png" />
+    <None Remove="Assets\exit_klick.png" />
+    <None Remove="Assets\exit_normal.png" />
+    <None Remove="Assets\exit_сlick.png" />
+    <None Remove="Assets\fon.PNG" />
+    <None Remove="Assets\Food.png" />
+    <None Remove="Assets\Food2.png" />
+    <None Remove="Assets\Foood.png" />
+    <None Remove="Assets\Foood2.png" />
+    <None Remove="Assets\Head.png" />
+    <None Remove="Assets\Head2.PNG" />
+    <None Remove="Assets\hhhhhhhhhhhhhhhh.wav" />
+    <None Remove="Assets\icon-snake.ico" />
+    <None Remove="Assets\icon.ico" />
+    <None Remove="Assets\icon2.ico" />
+    <None Remove="Assets\iconsnake.ico" />
+    <None Remove="Assets\kb.png" />
+    <None Remove="Assets\keyboard.jpg" />
+    <None Remove="Assets\menu.png" />
+    <None Remove="Assets\music.mp3" />
+    <None Remove="Assets\music.wav" />
+    <None Remove="Assets\option_hover.png" />
+    <None Remove="Assets\option_menu.png" />
+    <None Remove="Assets\option_normal.png" />
+    <None Remove="Assets\play.png" />
+    <None Remove="Assets\play_click.png" />
+    <None Remove="Assets\play_klick.png" />
+    <None Remove="Assets\play_сlick.png" />
+    <None Remove="Assets\rule.png" />
+    <None Remove="Assets\rules.png" />
+    <None Remove="Assets\rules_click.png" />
+    <None Remove="Assets\rules_klick.png" />
+    <None Remove="Assets\rules_сlick.png" />
+    <None Remove="Assets\rule_klick.png" />
+    <None Remove="Assets\snake1.PNG" />
+    <None Remove="Assets\snake2.PNG" />
+    <None Remove="Assets\sound off.png" />
+    <None Remove="Assets\sound on.png" />
+    <None Remove="Assets\sound_off.png" />
+    <None Remove="Assets\sound_on.png" />
+    <None Remove="Assets\start_hover.png" />
+    <None Remove="Assets\Start_Menu in C# Visual Studio By Rohit Programming Zone.pdf" />
+    <None Remove="Assets\start_normal.png" />
+    <None Remove="Assets\выйти%28активная%29.png" />
+    <None Remove="Assets\выйти.png" />
+    <None Remove="Assets\играть%28активная%29.png" />
+    <None Remove="Assets\играть.png" />
+    <None Remove="Assets\назад%28активная%29.png" />
+    <None Remove="Assets\назад.png" />
+    <None Remove="Assets\Новая папка\.ico" />
+    <None Remove="Assets\Новая папка\exit_normal.png" />
+    <None Remove="Assets\Новая папка\fon.jpg" />
+    <None Remove="Assets\Новая папка\icon.ico" />
+    <None Remove="Assets\Новая папка\menu.png" />
+    <None Remove="Assets\Новая папка\option_normal.png" />
+    <None Remove="Assets\Новая папка\start_normal.png" />
+    <None Remove="Assets\Новая папка\заставка.gif" />
+    <None Remove="Assets\опции%28активная%29.png" />
+    <None Remove="Assets\опции%28меню%29.png" />
+    <None Remove="Assets\опции.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\2players.png" />
+    <Resource Include="Assets\2players_сlick.png" />
+    <Resource Include="Assets\arrows.png" />
+    <Resource Include="Assets\Back.PNG" />
+    <Resource Include="Assets\background.PNG" />
+    <Resource Include="Assets\Back_click.PNG" />
+    <Resource Include="Assets\Body.png" />
+    <Resource Include="Assets\Body2.PNG" />
+    <Resource Include="Assets\DeadBody.png" />
+    <Resource Include="Assets\DeadBody2.PNG" />
+    <Resource Include="Assets\DeadHead.png" />
+    <Resource Include="Assets\DeadHead2.PNG" />
+    <Resource Include="Assets\DroidSansMono.ttf" />
+    <Resource Include="Assets\Empty.png" />
+    <Resource Include="Assets\exit.png" />
+    <Resource Include="Assets\exit_сlick.png" />
+    <Resource Include="Assets\Food.png" />
+    <Resource Include="Assets\Food2.png" />
+    <Resource Include="Assets\Foood.png" />
+    <Resource Include="Assets\Foood2.png" />
+    <Resource Include="Assets\Head.png" />
+    <Resource Include="Assets\Head2.PNG" />
+    <Resource Include="Assets\iconsnake.ico" />
+    <Resource Include="Assets\kb.png" />
+    <Resource Include="Assets\music.mp3" />
+    <EmbeddedResource Include="Assets\music.wav" />
+    <Resource Include="Assets\play.png" />
+    <Resource Include="Assets\play_сlick.png" />
+    <Resource Include="Assets\rules.png" />
+    <Resource Include="Assets\rules_сlick.png" />
+    <Resource Include="Assets\snake1.PNG" />
+    <Resource Include="Assets\snake2.PNG" />
+    <Resource Include="Assets\sound_off.png" />
+    <Resource Include="Assets\sound_on.png" />
+  </ItemGroup>
+
+</Project>
