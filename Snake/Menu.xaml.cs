@@ -23,7 +23,7 @@ namespace Snake
         {
             InitializeComponent();
             player = new MediaPlayer();
-            player.Open(new Uri("C:\\PSU\\ПГУшечка\\2 курс\\Курсач\\Snake\\Snake\\Assets\\music.mp3"));
+            player.Open(new Uri("Assets/music.mp3", UriKind.Relative));
             player.MediaEnded += PlayerLoop;
             player.Play(); 
         }
